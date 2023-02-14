@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Learning JavaScript</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+           #box {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                display: none;
+                position: relative;
+            }
+       </style>
+   </head>
+   <body>
+    <body>
+        <p>Your time: <span id="time"></span></p>
+        <div id="box"></div>
+        <script type="text/javascript">
+            function getRandomColor() {
+                var letters = '0123456789ABCDEF';
+                var color = '#';
+                for (var i=0; i<6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+            alert(getRandomColor());
+            
+            var clickedTime;
+            var createdTime;
+       </script>
+    </body>
+</html>

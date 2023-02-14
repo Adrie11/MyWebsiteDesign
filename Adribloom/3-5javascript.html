@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning JavaScript</title>
+  </head>
+  <body>
+    <button id="textChanger">Change first div text</button>
+    <br /><br />
+    <div id="firstDiv">This is some text</div>
+    <script type="text/javascript">
+        // CHANGING WEBSITE CONTENT
+      document.getElementById("textChanger").onclick = function () {
+        document.getElementById("firstDiv").innerHTML = "This is awesome!";
+      };
+    </script>
+  </body>
+</html>

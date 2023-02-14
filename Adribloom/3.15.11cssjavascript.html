@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Learning JavaScript</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+           #box {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                display: none;
+                position: relative;
+            }
+       </style>
+   </head>
+   <body>
+    <body>
+        <p>Your time: <span id="time"></span></p>
+        <div id="box"></div>
+        <script type="text/javascript">
+            function getRandomColor() {
+                var time=Math.random();
+                time=time*5000;
+                setTimeout(function() {
+                    if (Math.random() > 0.5) {
+                    document.getElementById("box").style.borderRadius="100px";
+                    } else {
+                    document.getElementById("box").style.borderRadius="0px";
+                    }
+                    var top=Math.random();
+                    top=top*300;
+                    var left=Math.random();
+                    left=left*500;
+                    document.getElementById("box").style.top=top+"px";
+                    document.getElementById("box").style.left=left+"px"
+                    document.getElementById("box").style.backgroundColor=
+                    getRandomColor();
+                    document.getElementById("box").style.display="block";
+                    createdTime=Date.now();
+                }, time);
+            }
+            document.getElementById("box").onclick=function() {
+                }
+       </script>
+    </body>
+</html>
